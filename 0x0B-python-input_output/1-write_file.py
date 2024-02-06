@@ -4,7 +4,9 @@
 
 
 def write_file(filename="", text=""):
-    """open a file, wtite to it and return the num of char wtitten"""
+    """open a file, wtite to it and return the
+    num of char wtitten"""
+
     with open(filename, 'w', encoding='utf-8')
     as file:
         return file.write(text)
