@@ -1,0 +1,18 @@
+# The `6-base_geometry.py` Module
+
+## Class: `BaseGeometry`
+
+### Overview
+The `BaseGeometry` class is designed to serve as a base class for geometry-related functionality.
+
+### Public Instance Method: `area`
+- Raises an Exception with the message "area() is not implemented" to signal that this method should be implemented by subclasses.
+
+```python
+class BaseGeometry:
+    """Public instance method: def area(self):
+    that raises an Exception with the message area()
+    is not implemented"""
+    def area(self):
+        """return exception"""
+        raise Exception("area() is not implemented")
