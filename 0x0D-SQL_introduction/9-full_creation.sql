@@ -4,5 +4,6 @@ CREATE TABLE IF NOT EXISTS second_table(
   name VARCHAR(256),
   score INT
 );
+VALUES 
 ("John", 10),
 ("Alex", 3),                                           ("Bob", 14),                                           ("George" 8)
