@@ -3,6 +3,6 @@
 function add(a, b) {
   a = Number(process.argv[2]);
   b = Number(process.argv[3]);
-  return console.log(parseInt(a) + parseInt(b));
+  return console.log(a + b);
 }
 add();
