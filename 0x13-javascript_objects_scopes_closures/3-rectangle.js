@@ -9,10 +9,6 @@ class Rectangle {
   }
 
   print () {
-    if (!this.width || !this.height) {
-      console.log("Invalid dimensions");
-      return;
-    }
     for (let i = 0; i < this.height; i++) {
       let row = "";
       for (let j = 0; j < this.width; j++) {
