@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""A python script that takes in a URL and email
+"""A python script that takks in a URL and email
    send a post request with the email as a parameter
-   and displays the body of the response
+   and display the body of the response
 """
 from urllib.request import urlopen, Request
 from urllib.parse import urlencode
