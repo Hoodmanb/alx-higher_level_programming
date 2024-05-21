@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//script that prints the number of movies
+// script that prints the number of movies
 
 const request = require('request');
 request.get(process.argv[2], (err, response, body) => {
@@ -10,7 +10,7 @@ request.get(process.argv[2], (err, response, body) => {
     const people = '/api/people/18/';
     for (let i = 0; i < results.length; i++) {
       if (results[i].characters.find(add => add.includes(people))) {
-	count++;
+        count++;
       }
     }
     console.log(count);
