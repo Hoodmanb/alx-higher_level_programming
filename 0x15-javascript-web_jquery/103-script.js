@@ -1,9 +1,15 @@
 $(document).ready(function () {
   const url = 'https://hellosalut.stefanbohacek.dev/';
 
-  $('form').on('submit', function (e) {
-    e.preventDefault();
-    const langCode = $('#language_code').val(); // Get the language code here
+  $('#language_code').keypress(function (e) {
+    if (e.which === 13) {
+      $('#btn_translate').click();
+      return false;
+    }
+  });
+
+  $('#btn_translate').on('click', function () {
+    const langCode = $('#language_code').val();
     $.ajax({
       url: `${url}?lang=${langCode}`,
       type: 'GET',
